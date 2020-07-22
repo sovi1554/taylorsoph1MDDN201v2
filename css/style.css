@@ -1,0 +1,109 @@
+*{
+	box-sizing: border-box; 
+}
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f2f2f2;
+}
+
+h1{
+	font-family: 'Playfair Display', serif;
+	font-size: 50px;
+
+}
+h2{
+	font-family: 'Playfair Display', serif;
+	font-size: 50px;
+	border-bottom: 1px solid;
+	border-color: black;
+}
+h3{
+	font-family: 'Montserrat', sans-serif;
+	background-color:#f0bc19;
+	color: white;
+	padding: 5px;
+	font-size: 20px;
+}
+section{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.intro{
+	padding-top:50px;
+
+}
+header{
+	background-color:#f0bc19;
+	color: white; 
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/*navbar styling*/
+.topnav{
+width:100%;
+text-align: left;
+margin: 0 auto;
+overflow: hidden;
+background-color: #f2f2f2;
+font-size: 15px;
+line-height: 22px;
+position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+z-index: 1; /* Stay on top */
+top: 0; /* Stay at the top */
+}
+
+.topnav a{
+font-size: 20px;
+text-decoration: none;
+padding: 20px 20px;
+color: black;
+background-color: transparent;
+display:block;
+float:left;
+text-align: left;
+}
+/* changes colour on hover*/
+.topnav a:hover{
+color:#f0bc19;
+border-width: 2px;
+border-color: black;
+border-bottom: 1px solid #333;
+}
+
+/* changes colour on hover of nav buttons*/
+.topav a:hover{
+background-color: #f2f2f2;
+color:black;
+}
+
+.g-40{
+	width: 40%;
+	float: left;
+padding: 30px;
+}
+
+.g-60{
+	width: 60%;
+	float: left;
+	padding: 30px;
+}
+
+
+.resize{
+	width: 400px; 
+	height: auto;
+}
+
+.pinfloat{
+	clear:both;
+}
+
+img {
+	border: 1px solid #333;
+  }

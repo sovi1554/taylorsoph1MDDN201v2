@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Your Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+		  <a href="#intro" class="active">HOME</a>
+		  <a href="#modems">MODEMS</a> 
+		  <a href="#routers">ROUTERS</a>
+		  <a href="#ethernet">ETHERNET</a>
+		  <a href="#cable">CABLE</a>
+    </div>
+	  
+
+<div id="intro">
+	<header>
+	<section>
+		<h1>An Introduction to Internet Infrastructure in Wellington</h1>
+		<p>The following pages of this welsite will include a variety of images entailing internet infrastructer that we see every day and may not realise.
+				All of which help us with our daily tasks that are aided by internet service. </p>
+			
+	</section>
+</header>
+	</div>
+
+		<section>
+			<h2>Infrastructure within Wellington</h2>
+			<p>The infrastructure below are found both in the home and outside of it and work togeteher to provide us with the internet both wired and wirelessly that we use on a daily basis!</p>
+		</section>
+
+
+	<section>
+		<div id="modems" class="pinfloat">
+			<div class="g-60">
+				<img class ="resize" src="img/modem.jpg">
+			</div>
+			<div class="g-40">
+				<h3>Modems</h3>
+				<p>A modem establishes and maintains a dedicated connection to your internet service provider to give you access to the internet. </p>
+				<p>There are two different signals that the modem can read, the modem <strong>demodulates</strong> incoming analogue signals from the internet, into digital signals for the computer and vies versa. </p>
+			</div>
+		</div>
+
+		<div id="routers"class="pinfloat">
+			<div class="g-60">
+				<img class ="resize" src="img/router.jpg">
+			</div>
+			<div class="g-40">
+				<h3>Routers</h3>
+				<p>A router is what distributes the internet to all of your devices. It has multiple ports so you can <strong>physically</strong> connect multiple devices to the internet via an ethernet cable.</p>
+				<p>It also functions as a 'wireless access point' so that <strong>wireless</strong> devices can have internet access. </p>
+			</div>
+		</div>
+
+		<div id="ethernet"class="pinfloat">
+			<div class="g-60">
+				<img class ="resize" src="img/ethernet.jpg">
+			</div>
+			<div class="g-40">
+				<h3>Ethernet Cables</h3>
+				<p>Ethernet cables are used to provide a direct internet connection from a modem to a computer. It serves as a bridge to the internet, sending and receiving data packets from the internet provider to the computer. </p>
+			</div>
+		</div>
+
+		<div id="cable"class="pinfloat">
+			<div class="g-60">
+				<img class ="resize" src="img/cable.jpg">
+			</div>
+			<div class="g-40">
+				<h3>Coaxial Cables</h3>
+				<p>A Coaxial Cable is typically made of a central copper conductor that is insulated by a layer of plastic, a metal outer conductor and then a protective outer plastic layer. This is what provides us with 'Cable internet'.</p>
+				<p>It transfers data through electricity. Your internet service provider sends data through through this cable, which is connected to your modem. Then, depending on how your internet is set up, the modem will send data through your ethernet cable to your computer or to your router to distribute wirelessly.</p>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+
+</html>
+
+
+<script>
+	// toggle between adding and removing the "responsive" class to topnav when user clicks on the bars icon 
+  function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+		  x.className += " responsive";
+	  } else {
+		  x.className = "topnav";
+	  }
+  }
+  
+  $(document).ready(function(){
+	// Add smooth scrolling to all links
+	$("a").on('click', function(event) {
+  
+	  // Make sure this.hash has a value before overriding default behavior
+	  if (this.hash !== "") {
+		// Prevent default anchor click behavior
+		event.preventDefault();
+  
+		// Store hash
+		var hash = this.hash;
+  
+		// Using jQuery's animate() method to add smooth page scroll
+		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		$('html, body').animate({
+		  scrollTop: $(hash).offset().top
+		}, 600, function(){
+	 
+		  // Add hash (#) to URL when done scrolling (default click behavior)
+		  window.location.hash = hash;
+		});
+	  } // End if
+	});
+  });
+  </script>
